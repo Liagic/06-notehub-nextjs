@@ -1,7 +1,7 @@
 'use client';
 import css from './NoteDetails.module.css';
 import ErrorMessage from '@/components/ErrorMessage/ErrorMessage';
-import Loader from '../Loader/Loader';
+import Loader from '../../../components/Loader/Loader';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'next/navigation';
 import { getSingleNote } from '@/lib/api';
