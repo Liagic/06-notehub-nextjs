@@ -8,14 +8,12 @@ import { getSingleNote } from '@/lib/api';
 
 const NoteDetailsClient = () => {
   const { id } = useParams<{ id: string }>();
-  const { data, isLoading, isError, isSuccess, error } = useQuery({
+  const { data, isLoading, isError, isSuccess } = useQuery({
     queryKey: ['note', id],
     queryFn: () => getSingleNote(id),
     refetchOnMount: false,
   });
-  console.log('id:', id);
-  console.log('data:', data);
-  console.log('error:', error);
+
   return (
     <>
       {isSuccess && (
