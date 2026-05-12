@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { Note } from '@/type/note';
+import type { Note } from '@/types/note';
 interface NoteHubResponse {
   notes: Note[];
   totalPages: number;
